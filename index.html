@@ -1,41 +1,264 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nickmo의 홈페이지</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f4f6fa;
+            color: #243047;
+            font-family: "맑은 고딕", sans-serif;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 48px 20px;
+        }
+
+        header {
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 0;
+            color: #596579;
+        }
+
+        section {
+            margin-bottom: 24px;
+            padding: 24px;
+            background-color: white;
+            border: 1px solid #dce2eb;
+            border-radius: 12px;
+        }
+
+        h2 {
+            margin: 0 0 16px;
+            font-size: 20px;
+        }
+
+        .week {
+            margin: 0 0 4px;
+            color: #345fc5;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li+li {
+            margin-top: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 12px 16px;
+            border: 1px solid #e1e6ef;
+            border-radius: 8px;
+            color: #244fae;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        a:hover,
+        a:focus-visible {
+            background-color: #eef3ff;
+            border-color: #345fc5;
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 2px solid #345fc5;
+            outline-offset: 3px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 28px;
+            border: 1px solid #dce2eb;
+            border-top: 4px solid #345fc5;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #ffffff, #eaf0ff);
+        }
+
+        .footer-label {
+            margin: 0 0 16px;
+            color: #345fc5;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .footer-profile {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .footer-avatar {
+            display: grid;
+            place-items: center;
+            width: 56px;
+            height: 56px;
+            flex-shrink: 0;
+            border-radius: 16px;
+            background-color: #345fc5;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .footer-name {
+            margin: 0;
+            font-size: 22px;
+            overflow-wrap: anywhere;
+        }
+
+        .footer-id {
+            margin: 4px 0 0;
+            color: #596579;
+            font-size: 14px;
+        }
+
+        .footer-message {
+            margin: 20px 0 0;
+            padding-top: 16px;
+            border-top: 1px solid #ccd7eb;
+            color: #596579;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>chapter3</h2>
-    <a href="chapter3/1text_header.html">1text_header.html</a><br>
-    <a href="chapter3/3text_content.html">3text_content.html</a><br>
-    <a href="chapter3/5text_anchor.html">5text_anchor.html</a><br>
-    <a href="chapter3/10nester_list.html">10nester_list.html</a><br>
-    <a href="chapter3/11table_basic.html">11table_basic.html</a><br>
-    <a href="chapter3/12table_cell.html">12table_cell.html</a><br>
-    <a href="chapter3/13table_span.html">13table_span.html</a><br>
-    <a href="chapter3/14image_basic.html">14image_basic.html</a><br>
-    <hr>
+    <main>
+        <header>
+            <h1>Nickmo의 홈페이지</h1>
+            <p>주차별로 학습한 내용과 실습 결과를 정리합니다.</p>
+        </header>
 
-    <h2>chapter4</h2>
-    <a href="chapter4/1form_basic.html">1form_basic</a><br>
-    <a href="chapter4/2form_radio.html">2form_radio</a><br>
-    <a href="chapter4/4form_selectBasic.html">4form_selectBasic</a><br>
-    <a href="chapter4/8note_textarea.html">8note_textarea</a><br>
-    <a href="chapter4/9space_block.html">9space_block</a><br>
-    <a href="12space_semanticLess.html">12space_semanticLess</a><br>
-    <a href="13space_semanticLess.html">13space_semanticLess</a><br>
-    <hr>
+        <section>
+            <p class="week">CHAPTER 1</p>
+            <h2>1주차 과제</h2>
+            <ul>
+                <li><a href="chapter1/chapter1.html">1주차 과제 보기</a></li>
+            </ul>
+        </section>
 
-    <h2>chapter5</h2>
-    <a href="chapter5/1selector_tagidclass.html">1selector_tagidclass</a><br>
-    <a href="chapter5/9attribute_basic.html">9attribute_basic</a><br>
-    <a href="chapter5/11desc_descendants.html">11desc_descendants</a><br>
-    <a href="chapter5/13desc_tableWithChilden.html">13desc_tableWithChilden</a><br>
-    <a href="chapter5/14etc_action.html">14etc_action</a><br>
-    <hr>
+        <section>
+            <p class="week">CHAPTER 2 · HTML Basics</p>
+            <h2>2주차 과제</h2>
+            <ul>
+                <li><a href="chapter2/HTMLPageWithError.html">HTMLPageWithError</a></li>
+                <li><a href="chapter2/8HTMLpageWithError.html">8HTMLpageWithError</a></li>
+            </ul>
+        </section>
 
-    <h2>homework</h2>
-    <a href="chapter5/homework.html">homework</a><br>
+        <section>
+            <p class="week">CHAPTER 3</p>
+            <h2>3주차 과제</h2>
+            <ul>
+                <li><a href="chapter3/1text_header.html">1text_header</a></li>
+                <li><a href="chapter3/3text_content.html">3text_content</a></li>
+                <li><a href="chapter3/5text_anchor.html">5text_anchor</a></li>
+                <li><a href="chapter3/10nester_list.html">10nester_list</a></li>
+                <li><a href="chapter3/11table_basic.html">11table_basic</a></li>
+                <li><a href="chapter3/12table_cell.html">12table_cell</a></li>
+                <li><a href="chapter3/13table_span.html">13table_span</a></li>
+                <li><a href="chapter3/14image_basic.html">14image_basic</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <p class="week">CHAPTER 4</p>
+            <h2>4주차 과제</h2>
+            <ul>
+                <li><a href="chapter4/1form_basic.html">1form_basic</a></li>
+                <li><a href="chapter4/2form_radio.html">2form_radio</a></li>
+                <li><a href="chapter4/4form_selectBasic.html">4form_selectBasic</a></li>
+                <li><a href="chapter4/8note_textarea.html">8note_textarea</a></li>
+                <li><a href="chapter4/9space_block.html">9space_block</a></li>
+                <li><a href="chapter4/12space_semanticLess.html">12space_semanticLess</a></li>
+                <li><a href="chapter4/13space_semanticLess.html">13space_semanticLess</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <p class="week">CHAPTER 5</p>
+            <h2>5주차 과제</h2>
+            <ul>
+                <li><a href="chapter5/1selector_tagidclass.html">1selector_tagidclass</a></li>
+                <li><a href="chapter5/9attribute_basic.html">9attribute_basic</a></li>
+                <li><a href="chapter5/11desc_descendants.html">11desc_descendants</a></li>
+                <li><a href="chapter5/13desc_tableWithChilden.html">13desc_tableWithChilden</a></li>
+                <li><a href="chapter5/14etc_action.html">14etc_action</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <p class="week">CHAPTER 6</p>
+            <h2>6주차 과제</h2>
+            <ul>
+                <li><a href="chapter6/1_box_widthHeight.html">1_box_widthHeight</a></li>
+                <li><a href="chapter6/5border_basic.html">5border_basic</a></li>
+                <li><a href="chapter6/8display_none.html">8display_none</a></li>
+                <li><a href="chapter6/12display_inlineWithMargin.html">12display_inlineWithMargin</a></li>
+                <li><a href="chapter6/13display_inline-blockWithhMargin.html">13display_inline-blockWithhMargin</a></li>
+                <li><a href="chapter6/14background_image.html">14background_image</a></li>
+                <li><a href="chapter6/19background_repeatNone.html">19background_repeatNone</a></li>
+                <li><a href="chapter6/24font_size.html">24font_size</a></li>
+                <li><a href="chapter6/28font_styleWeight.html">28font_styleWeight</a></li>
+                <li><a href="chapter6/34position_absolute.html">34position_absolute</a></li>
+                <li><a href="chapter6/37position_fomulaBasic.html">37position_fomulaBasic</a></li>
+                <li><a href="chapter6/43float_basic.html">43float_basic</a></li>
+                <li><a href="chapter6/48shadow_textShadow.html">48shadow_textShadow</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <p class="week">HOMEWORK</p>
+            <h2>숙제</h2>
+            <ul>
+                <li><a href="chapter5/homework.html">homework</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p class="footer-label">MY LEARNING PORTFOLIO</p>
+
+            <div class="footer-profile">
+                <span class="footer-avatar" aria-hidden="true">N</span>
+
+                <div>
+                    <h2 class="footer-name">Nickmo</h2>
+                    <p class="footer-id">학번 · 여기에 학번 입력</p>
+                </div>
+            </div>
+
+            <p class="footer-message">
+                여기에 나만의 학습 목표를 적어주세요.
+            </p>
+        </footer>
+    </main>
 </body>
+
 </html>
